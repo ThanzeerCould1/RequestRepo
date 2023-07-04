@@ -1,0 +1,6 @@
+version: 1
+env: python3
+
+tasks:
+  - name: Run Python Script
+    command: python -m bot
