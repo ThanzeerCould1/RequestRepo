@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "website": "https://github.com/ThanzeerCould1/RequestRepo",
+    "repository": "https://github.com/ThanzeerCould1/RequestRepo",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -51,6 +51,10 @@
             "required": false
         },
         "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "required": false
+            },
+        "REQ_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "required": false
         },
