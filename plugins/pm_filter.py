@@ -761,11 +761,11 @@ async def auto_filter(client, msg, spoll=False):
             fmsg = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            image = ""
-            fmsg = await message.reply_photo(photo=image, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            image = "https://telegra.ph/file/5dca04109fd6f5523b1e1.jpg"
+            fmsg = await message.reply_text(caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
     else:
-        image = ""
-        fmsg = await message.reply_photo(photo=image, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        image = "https://telegra.ph/file/5dca04109fd6f5523b1e1.jpg"
+        fmsg = await message.reply_text(caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
 
